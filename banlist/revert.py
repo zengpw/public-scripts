@@ -1,4 +1,5 @@
 # -*- coding: UTF-8 -*-
+# python version > 3.8
 import os
 
 import create_banlist as banlist
