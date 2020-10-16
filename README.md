@@ -1,7 +1,7 @@
-# public-scripts
+# Scripts
 > Some scripts for external caller
 
-## Scripts
+## Files
 Path | Effects | Dependencies
 :- | - | -
 banlist | Some text lists | Python 3.8 and above

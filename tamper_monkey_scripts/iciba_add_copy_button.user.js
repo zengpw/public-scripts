@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name              Iciba Add Copy Button
 // @namespace         https://github.com/zengpw
-// @version           1.0
+// @version           1.1
 // @author            Vincent Zeng
 // @description       Add copy button for iciba.com
-// @match             *://www.iciba.com/*
+// @match             *://www.iciba.com/word*
 // @grant             GM.setClipboard
 // @require           https://cdn.staticfile.org/jquery/3.5.0/jquery.min.js
 // ==/UserScript==
@@ -15,7 +15,7 @@
   'use strict';
 
   let checkURL = setInterval(function () {
-    if (window.document.URL != "http://www.iciba.com/") {
+    if (document.URL != "http://www.iciba.com/") {
       clearInterval(checkURL);
       refreshCopyArea();
       addObserver();
